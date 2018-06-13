@@ -4,9 +4,7 @@ from easysensor.models import EasySensor
 class Trajet(models.Model):
     debut = models.DateTimeField()
     easysensor = models.ForeignKey(EasySensor, on_delete=models.CASCADE)
-    vitesse_moyenne = models.FloatField(null = True)
     duree = models.CharField(max_length=250,null=True)
-    puissance = models.FloatField(null = True)
     distance = models.FloatField(null = True)
     note_eco = models.FloatField(null = True)
     note_secu = models.FloatField(null = True)
@@ -30,4 +28,4 @@ class Mesure(models.Model):
     count = models.IntegerField()
     vitesse_limite = models.IntegerField(null = True)
     def __str__(self):
-return str(self.timestamp)
+        return str(self.timestamp)

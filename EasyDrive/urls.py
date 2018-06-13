@@ -21,4 +21,5 @@ urlpatterns = [
     path('api-auth/', include('rest_framework.urls')),
     path('', include('easysensor.urls')),
     path('', include('user.urls')),
+    path('', include('trajet.urls')),
 ]
