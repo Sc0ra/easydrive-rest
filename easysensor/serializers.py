@@ -8,4 +8,4 @@ class EasySensorSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = EasySensor
-        fields = ('id', 'nom', 'device_id', 'user', 'activated', 'trajets' )
+        fields = ('nom', 'device_id', 'activated', 'trajets' )

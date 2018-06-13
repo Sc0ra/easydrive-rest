@@ -22,4 +22,5 @@ urlpatterns = [
     path('', include('easysensor.urls')),
     path('', include('user.urls')),
     path('', include('trajet.urls')),
+    path('easyweb', include('easyweb.urls')),
 ]
